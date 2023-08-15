@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 97vh;
+    background-color: hsl(210, 60%, 98%);
+}
+
+p {
+    color: hsl(217, 10%, 55%);
+}
+
+main {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.notificationBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 1rem 0;
+    margin-bottom: 0.5rem;
+}
+
+.notificationBar>div {
+    display: flex;
+}
+
+.notificationBar h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+.notificationBar>div span {
+    color: white;
+    background-color: hsl(219, 85%, 26%);
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.08rem 0.5rem;
+    border-radius: 5px;
+    justify-self: end;
+    margin-left: 0.5rem;
+}
+
+.notificationBar p {
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.notificationCard {
+    display: flex;
+    justify-content: start;
+    align-self: start;
+    padding: 1.2rem .8rem;
+    border-radius: 5px;
+    margin-bottom: 0.4rem;
+}
+
+.notificationCard img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.notificationCard .c-image {
+    width: 2.3rem;
+    height: 2.3rem;
+    cursor: pointer;
+}
+
+.notificationCard p {
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.notificationCard .name {
+    color: hsl(224, 21%, 14%);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.notificationCard .name:hover {
+    color: hsl(219, 100%, 49%);
+    font-weight: bold;
+}
+
+.notificationCard .details {
+    flex-grow: 1;
+    display: flex;
+    margin-left: 0.5rem;
+    flex-direction: column;
+}
+
+
+.notificationCard .details .event {
+    color: hsl(224, 22%, 17%);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.notificationCard .details .group {
+    color: hsl(219, 100%, 49%);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.notificationCard .details .event:hover {
+    color: hsl(219, 100%, 49%);
+}
+
+.notificationCard .msg {
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 0.1px solid hsl(211, 68%, 94%);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+
+.notificationCard .msg:hover {
+    background-color: hsl(211, 68%, 94%);
+}
+
+.notRead .indicator {
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: hsl(1, 90%, 64%);
+    margin-left: 0.4rem;
+    margin-top: 0.5rem;
+    align-self: self-start;
+    border-radius: 10px;
+    font-size: .4rem;
+    color: hsl(1, 90%, 64%);
+    user-select: none;
+}
+
+
+.read {
+    display: none;
+}
+
+
+.notRead {
+    background-color: hsl(210, 60%, 98%);
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        min-height: 100vh;
+    }
+
+    main {
+        width: 100%;
+        height: 100%;
+        padding: .5rem;
+    }
+
+}

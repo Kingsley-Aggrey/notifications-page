@@ -35,7 +35,7 @@ Solution on Mobile  -   ![](./Screenshots/solution-Mobile.png)
 ### Links
 
 - Solution URL: [GITHUB](https://github.com/Kingsley-Aggrey/notifications-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [notify-pg](https://notify-pg.netlify.app/)
 
 ## My process
 
